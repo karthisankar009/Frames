@@ -90,13 +90,13 @@ public class TestScript extends BaseClass{
 			base.screenCapture();
 			WebElement orderId = driver.findElement(By.id("btn_id_1261846"));
 			orderId.getText();
-			
-		//	WebElement logoutButton = driver.findElement(By.xpath("//a[@href='Logout.php']"));
-		//	base.clickByJava(logoutButton);
-		//	base.screenCapture();
-		//	WebElement againLogin = driver.findElement(By.xpath("//a[@href='index.php']"));
-		//	base.clickByJava(againLogin);
-		//	base.screenCapture();
+			WebElement logoutButton = driver.findElement(By.xpath("//a[@href='Logout.php']"));
+			base.clickByJava(logoutButton);
+			base.screenCapture();
+			WebElement againLogin = driver.findElement(By.xpath("//a[@href='index.php']"));
+			base.clickByJava(againLogin);
+			base.screenCapture();
+			System.out.println("again login");
 			
 			
 			
